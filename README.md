@@ -1,7 +1,6 @@
-# PotatoCenter
+# CosmicCenter
 
-A brand new OTA app written in Flutter for updating Android. Written with [
-POSP](https://potatoproject.co/) in mind, it works with the [android_flutter_updater](https://github.com/AgentFabulous/android_flutter_updater) plugin to interact with native components of Android such as [UpdateEngine](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/os/UpdateEngine.java) to serve a hassle free update experience.
+A brand new OTA app written in Flutter for updating Android. Written with [Cosmic-OS](https://cosmic-os.org/) in mind, it works with the [android_flutter_updater](https://github.com/AgentFabulous/android_flutter_updater) plugin to interact with native components of Android such as [UpdateEngine](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/os/UpdateEngine.java) to serve a hassle free update experience.
 
 ## Setting up
 - Open the project in Android Studio.

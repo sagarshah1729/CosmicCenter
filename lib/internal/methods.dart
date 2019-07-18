@@ -1,7 +1,7 @@
 import 'package:android_flutter_updater/android_flutter_updater.dart';
 import 'package:flutter/material.dart';
-import 'package:potato_center/models/download.dart';
-import 'package:potato_center/provider/download.dart';
+import 'package:cosmic_center/models/download.dart';
+import 'package:cosmic_center/provider/download.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';

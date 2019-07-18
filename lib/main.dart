@@ -1,14 +1,14 @@
 import 'package:android_flutter_updater/android_flutter_updater.dart';
 import 'package:flutter/material.dart';
-import 'package:potato_center/internal/methods.dart';
-import 'package:potato_center/models/download.dart';
-import 'package:potato_center/provider/app_info.dart';
-import 'package:potato_center/provider/download.dart';
-import 'package:potato_center/provider/sheet_data.dart';
-import 'package:potato_center/ui/bottom_sheet.dart';
-import 'package:potato_center/ui/custom_bottom_sheet.dart';
-import 'package:potato_center/ui/custom_icons.dart';
-import 'package:potato_center/ui/no_glow_scroll_behavior.dart';
+import 'package:cosmic_center/internal/methods.dart';
+import 'package:cosmic_center/models/download.dart';
+import 'package:cosmic_center/provider/app_info.dart';
+import 'package:cosmic_center/provider/download.dart';
+import 'package:cosmic_center/provider/sheet_data.dart';
+import 'package:cosmic_center/ui/bottom_sheet.dart';
+import 'package:cosmic_center/ui/custom_bottom_sheet.dart';
+import 'package:cosmic_center/ui/custom_icons.dart';
+import 'package:cosmic_center/ui/no_glow_scroll_behavior.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_permissions/simple_permissions.dart';
 
@@ -16,9 +16,9 @@ import 'provider/current_build.dart';
 
 BorderRadius _kBorderRadius = BorderRadius.circular(12);
 
-void main() => runApp(PotatoCenterRoot());
+void main() => runApp(CosmicCenterRoot());
 
-class PotatoCenterRoot extends StatelessWidget {
+class CosmicCenterRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -562,7 +562,7 @@ class HomeScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 12.0),
                         child: GestureDetector(
                           onTap: () =>
-                              launchUrl("https://potatoproject.co/changelog"),
+                              launchUrl("https://cosmic-os.org/changelog"),
                           child: Icon(
                             Icons.code,
                             size: 20,
@@ -653,14 +653,14 @@ class HomeScreen extends StatelessWidget {
                       onPressed: () => AndroidFlutterUpdater.startActivity(
                         pkg: 'com.android.settings',
                         cls:
-                            'com.android.settings.Settings\$FriesDashboardActivity',
+                            'com.android.settings.Settings\$CosmicSettingsDashboardActivity',
                       ),
                     ),
                     Spacer(),
                     IconButton(
                       icon: Icon(Icons.person),
                       onPressed: () =>
-                          launchUrl("https://potatoproject.co/team"),
+                          launchUrl("https://cosmic-os.org/team"),
                     ),
                     Spacer(flex: 4),
                     AnimatedCrossFade(

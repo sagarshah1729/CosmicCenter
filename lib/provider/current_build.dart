@@ -49,7 +49,7 @@ class CurrentBuildProvider extends ChangeNotifier {
     device = await AndroidFlutterUpdater.getModel();
     codename = await AndroidFlutterUpdater.getDeviceName();
     date = await AndroidFlutterUpdater.getBuildDate();
-    type = await AndroidFlutterUpdater.getProp("ro.potato.dish");
+    type = await AndroidFlutterUpdater.getProp("ro.cos.version");
 
   }
 }

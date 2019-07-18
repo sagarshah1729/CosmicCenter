@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:android_flutter_updater/android_flutter_updater.dart';
 import 'package:flutter/foundation.dart';
-import 'package:potato_center/internal/methods.dart';
-import 'package:potato_center/models/download.dart';
+import 'package:cosmic_center/internal/methods.dart';
+import 'package:cosmic_center/models/download.dart';
 
 class DownloadProvider extends ChangeNotifier {
   DownloadProvider() {

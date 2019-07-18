@@ -2,10 +2,10 @@ import 'package:android_flutter_updater/android_flutter_updater.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:potato_center/internal/methods.dart';
-import 'package:potato_center/provider/app_info.dart';
-import 'package:potato_center/provider/download.dart';
-import 'package:potato_center/provider/sheet_data.dart';
+import 'package:cosmic_center/internal/methods.dart';
+import 'package:cosmic_center/provider/app_info.dart';
+import 'package:cosmic_center/provider/download.dart';
+import 'package:cosmic_center/provider/sheet_data.dart';
 import 'package:provider/provider.dart';
 
 BorderRadius _kBorderRadius = BorderRadius.circular(12);
@@ -89,24 +89,24 @@ class BottomSheetContents extends StatelessWidget {
               Divider(),
               ifUpdateWidget(
                 ListTile(
-                  onTap: () => launchUrl('https://potatoproject.co/changelog'),
+                  onTap: () => launchUrl('https://cosmic-os.org/changelog'),
                   title: Text('Changelog'),
                   trailing: Icon(Icons.code),
                 ),
                 flipCondition: true,
               ),
               ListTile(
-                onTap: () => launchUrl('https://potatoproject.co'),
+                onTap: () => launchUrl('https://cosmic-os.org'),
                 title: Text('Website'),
                 trailing: Icon(Icons.public),
               ),
               ListTile(
-                onTap: () => launchUrl('https://twitter.com/PotatoAndroid'),
+                onTap: () => launchUrl('https://twitter.com/CosmicOSProject'),
                 title: Text('Twitter'),
                 trailing: Icon(MdiIcons.twitter),
               ),
               ListTile(
-                onTap: () => launchUrl('https://t.me/SaucyPotatoesOfficial'),
+                onTap: () => launchUrl('https://t.me/CosmicOSOfficial'),
                 title: Text('Telegram'),
                 trailing: Icon(MdiIcons.telegram),
               )
